@@ -1,0 +1,667 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #fffafc;
+    color: #55445f;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    background: #fffafc;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 15px rgba(130, 90, 140, 0.06);
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    color: #b77acb;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    font-size: 14px;
+    font-weight: 700;
+    color: #806c89;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #d58bb8;
+}
+
+/* Hero */
+
+.hero {
+    min-height: 620px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 10%;
+    background: linear-gradient(
+        135deg,
+        #fff0f6,
+        #f3eaff,
+        #e9f4ff
+    );
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 570px;
+}
+
+.small-label {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #bb80bf;
+}
+
+.hero h1 {
+    font-size: 58px;
+    line-height: 1.2;
+    margin-top: 20px;
+    color: #6c547b;
+}
+
+.hero h1 span {
+    color: #d58bb8;
+}
+
+.hero-content > p {
+    margin-top: 22px;
+    max-width: 450px;
+    font-size: 17px;
+    color: #85748f;
+}
+
+.main-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 30px;
+    border-radius: 50px;
+    background: #c28bcf;
+    color: white;
+    font-weight: 800;
+    box-shadow: 0 8px 20px rgba(194, 139, 207, 0.25);
+    transition: 0.3s;
+}
+
+.main-button:hover {
+    transform: translateY(-4px);
+    background: #ac76bd;
+}
+
+.hero-note {
+    margin-top: 25px;
+    font-size: 13px;
+    color: #a18ca8;
+}
+
+/* Hero Illustration */
+
+.hero-art {
+    position: relative;
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #f8d9eb, #e8d8ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 20px 60px rgba(184, 139, 201, 0.18);
+}
+
+.heart {
+    font-size: 130px;
+    color: #df8fb9;
+    text-shadow: 0 10px 25px rgba(211, 130, 174, 0.3);
+    animation: heartbeat 3s ease-in-out infinite;
+}
+
+.sun {
+    position: absolute;
+    top: 25px;
+    right: 45px;
+    font-size: 45px;
+    color: #f6c96a;
+}
+
+.cloud {
+    position: absolute;
+    font-size: 65px;
+    color: white;
+}
+
+.cloud-one {
+    top: 60px;
+    left: 25px;
+}
+
+.cloud-two {
+    bottom: 55px;
+    right: 25px;
+}
+
+.flower {
+    position: absolute;
+    font-size: 40px;
+    color: #f7a9cb;
+}
+
+.flower-one {
+    bottom: 25px;
+    left: 45px;
+}
+
+.flower-two {
+    top: 35px;
+    left: 140px;
+}
+
+.art-caption {
+    position: absolute;
+    bottom: -35px;
+    font-size: 14px;
+    font-weight: 800;
+    color: #b18bbd;
+}
+
+/* Section Headings */
+
+.section-heading {
+    max-width: 700px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    margin-top: 15px;
+    font-size: 38px;
+    line-height: 1.3;
+    color: #755c83;
+}
+
+.section-heading h2 span {
+    color: #d58bb8;
+}
+
+.section-heading p {
+    max-width: 600px;
+    margin: 18px auto 0;
+    color: #94829d;
+    font-size: 16px;
+}
+
+/* About */
+
+.about-section {
+    padding: 100px 10%;
+    background: #fffafc;
+}
+
+.about-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.about-card {
+    padding: 35px 25px;
+    border-radius: 25px;
+    background: white;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(150, 110, 160, 0.08);
+    transition: 0.3s;
+}
+
+.about-card:hover {
+    transform: translateY(-8px);
+}
+
+.about-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.about-card h3 {
+    color: #8d6ba1;
+    font-size: 21px;
+}
+
+.about-card p {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #95849e;
+}
+
+/* Emotions */
+
+.feelings-section {
+    padding: 100px 10%;
+    background: #f8f1ff;
+}
+
+.emotion-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.emotion-card {
+    padding: 20px;
+    border-radius: 22px;
+    background: white;
+    box-shadow: 0 8px 25px rgba(150, 110, 160, 0.06);
+    transition: all 0.35s ease;
+
+    max-width: 300px;
+    margin: auto;
+}
+
+.emotion-card:hover {
+    transform: translateY(-10px) rotate(-1deg);
+    box-shadow: 0 18px 35px rgba(150, 110, 160, 0.13);
+}
+
+
+
+.emotion-tag {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.emotion-emoji {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.emotion-card h3 {
+    font-size: 20px;
+    margin-top: 6px;
+    color: #765c82;
+}
+
+.emotion-card p {
+    margin-top: 8px;
+    font-size: 13px;
+    color: #94839c;
+}
+.emotion-message {
+    margin-top: 22px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(150, 120, 170, 0.15);
+    font-size: 12px;
+    font-weight: 800;
+}
+
+/* Emotion colors */
+
+.happy {
+    background: #fff4d9;
+}
+
+.happy .emotion-tag {
+    color: #d5a548;
+}
+
+.sad {
+    background: #e8f2ff;
+}
+
+.sad .emotion-tag {
+    color: #6b9edb;
+}
+
+.love {
+    background: #ffeaf2;
+}
+
+.love .emotion-tag {
+    color: #d98cb0;
+}
+
+.anger {
+    background: #ffede5;
+}
+
+.anger .emotion-tag {
+    color: #e58b69;
+}
+
+.fear {
+    background: #f0eaff;
+}
+
+.fear .emotion-tag {
+    color: #9b83d5;
+}
+
+.calm {
+    background: #e4f5eb;
+}
+
+.calm .emotion-tag {
+    color: #77b697;
+}
+
+/* Healing */
+
+.healing-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 12%;
+    background: linear-gradient(135deg, #fff4f8, #f3edff);
+}
+
+.healing-content {
+    max-width: 560px;
+}
+
+.healing-content h2 {
+    margin-top: 20px;
+    font-size: 42px;
+    line-height: 1.3;
+    color: #785f84;
+}
+
+.healing-content h2 span {
+    color: #d58bb8;
+}
+
+.healing-content p {
+    margin-top: 22px;
+    font-size: 16px;
+    color: #91809c;
+}
+
+.healing-signature {
+    margin-top: 25px;
+    font-weight: 800;
+    color: #c18bc5;
+}
+
+.healing-art {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #f5dcec;
+}
+
+.healing-heart {
+    font-size: 100px;
+    animation: heartbeat 3s ease-in-out infinite;
+}
+
+.healing-flower {
+    position: absolute;
+    bottom: 0;
+    right: -20px;
+    font-size: 55px;
+}
+
+.healing-cloud {
+    position: absolute;
+    top: -25px;
+    left: -20px;
+    font-size: 65px;
+}
+
+.healing-sparkle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 40px;
+    color: #c28bcf;
+}
+
+/* Mood */
+
+.mood-section {
+    padding: 100px 10%;
+    background: #fffafc;
+    text-align: center;
+}
+
+.mood-options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.mood-option {
+    width: 115px;
+    padding: 20px 15px;
+    border-radius: 25px;
+    background: white;
+    box-shadow: 0 8px 25px rgba(150, 110, 160, 0.08);
+    transition: 0.3s;
+}
+
+.mood-option:hover {
+    transform: translateY(-7px);
+    background: #fff0f7;
+}
+
+.mood-option span {
+    font-size: 38px;
+}
+
+.mood-option p {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 800;
+    color: #8f789c;
+}
+
+.mood-note {
+    margin-top: 35px;
+    font-size: 14px;
+    color: #b28ab9;
+}
+
+/* Quote */
+
+.quote-section {
+    padding: 80px 10%;
+    background: #f8f1ff;
+}
+
+.quote-box {
+    max-width: 850px;
+    margin: auto;
+    padding: 60px 30px;
+    border-radius: 35px;
+    background: linear-gradient(135deg, #fce3ef, #e8ddff);
+    text-align: center;
+}
+
+.quote-heart {
+    font-size: 40px;
+    color: #cf8eb6;
+}
+
+.quote-box h2 {
+    margin-top: 20px;
+    font-size: 30px;
+    line-height: 1.6;
+    color: #7a6286;
+}
+
+.quote-box p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #a18aaa;
+}
+
+/* Footer */
+
+.footer {
+    padding: 55px 20px;
+    background: #f5eafa;
+    text-align: center;
+}
+
+.footer-logo {
+    font-size: 27px;
+    font-weight: 800;
+    color: #b27fbd;
+}
+
+.footer p {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #9983a3;
+}
+
+.footer-heart {
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.copyright {
+    margin-top: 25px !important;
+    font-size: 12px !important;
+}
+
+/* Animation */
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 70px;
+        padding: 70px 7%;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero-content > p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-art {
+        width: 280px;
+        height: 280px;
+    }
+
+    .about-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .emotion-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .healing-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 60px;
+    }
+
+    .healing-content {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 37px;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .emotion-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .healing-content h2 {
+        font-size: 32px;
+    }
+
+    .quote-box h2 {
+        font-size: 23px;
+    }
+}
